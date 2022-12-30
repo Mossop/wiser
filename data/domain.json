@@ -1,0 +1,257 @@
+{
+  "System": {
+    "PairingStatus": "Paired",
+    "provisionTokenSucceedCount": 1,
+    "provisionTokenRequestCount": 1,
+    "TimeZoneOffset": 0,
+    "AutomaticDaylightSaving": true,
+    "SystemMode": "Heat",
+    "FotaEnabled": true,
+    "ValveProtectionEnabled": false,
+    "EcoModeEnabled": false,
+    "AwayModeAffectsHotWater": true,
+    "AwayModeSetPointLimit": 160,
+    "BoilerSettings": {
+      "ControlType": "HeatSourceType_RelayControlled",
+      "FuelType": "Gas",
+      "CycleRate": "CPH_6",
+      "OnOffHysteresis": 5
+    },
+    "CoolingModeDefaultSetpoint": 210,
+    "CoolingAwayModeSetpointLimit": -200,
+    "ComfortModeEnabled": true,
+    "PreheatTimeLimit": 10800,
+    "DegradedModeSetpointThreshold": 180,
+    "GeoPosition": { "Latitude": 52.7474, "Longitude": -1.17684 },
+    "UfhOrphanModeOutput": "On",
+    "isMigrated": false,
+    "UnixTime": 1672389420,
+    "ActiveSystemVersion": "3.10.8-fb3437180f",
+    "BrandName": "WiserHeat",
+    "CloudConnectionStatus": "Connected",
+    "ChipId": "0xa1120e00",
+    "LocalDateAndTime": {
+      "Year": 2022,
+      "Month": "December",
+      "Date": 30,
+      "Day": "Friday",
+      "Time": 837
+    },
+    "HeatingButtonOverrideState": "Off",
+    "HotWaterButtonOverrideState": "Off",
+    "OpenThermConnectionStatus": "Disconnected",
+    "SunriseTimes": [
+      816, 816, 816, 817, 817, 817, 817, 817, 817, 817, 817, 816, 816
+    ],
+    "SunsetTimes": [
+      1553, 1553, 1554, 1555, 1556, 1557, 1558, 1559, 1600, 1601, 1602, 1603,
+      1605
+    ],
+    "isTrialist": false,
+    "isProvisioned": true,
+    "HardwareGeneration": 1
+  },
+  "Cloud": {
+    "DetailedPublishing": true,
+    "WiserApiHost": "api-nl.wiserair.com",
+    "BootStrapApiHost": "bootstrap.gl.struxurewarecloud.com"
+  },
+  "HeatingChannel": [
+    {
+      "id": 1,
+      "Name": "Channel-1",
+      "RoomIds": [1],
+      "PercentageDemand": 65,
+      "DemandOnOffOutput": "On",
+      "HeatingRelayState": "On",
+      "IsSmartValvePreventingDemand": false
+    },
+    {
+      "id": 3,
+      "Name": "Channel-3",
+      "RoomIds": [2],
+      "PercentageDemand": 0,
+      "DemandOnOffOutput": "Off",
+      "HeatingRelayState": "Off",
+      "IsSmartValvePreventingDemand": true
+    }
+  ],
+  "HotWater": [
+    {
+      "id": 2,
+      "OverrideWaterHeatingState": "Off",
+      "ScheduleId": 1000,
+      "Mode": "Auto",
+      "WaterHeatingState": "Off",
+      "ScheduledWaterHeatingState": "Off",
+      "HotWaterRelayState": "Off",
+      "HotWaterDescription": "FromSchedule"
+    }
+  ],
+  "Room": [
+    {
+      "id": 1,
+      "ManualSetPoint": 230,
+      "ScheduleId": 1,
+      "ComfortModeScore": 2167,
+      "HeatingRate": 4214,
+      "RoomStatId": 1,
+      "Name": "Downstairs",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 203,
+      "CurrentSetPoint": 200,
+      "PercentageDemand": 65,
+      "ControlOutputState": "On",
+      "SetpointOrigin": "FromSchedule",
+      "DisplayedSetPoint": 200,
+      "ScheduledSetPoint": 200,
+      "AwayModeSuppressed": false,
+      "RoundedAlexaTemperature": 205,
+      "EffectiveMode": "Auto",
+      "PercentageDemandForItrv": 65,
+      "ControlDirection": "Heat",
+      "HeatingType": "HydronicRadiator"
+    },
+    {
+      "id": 2,
+      "ScheduleId": 2,
+      "ComfortModeScore": 8716,
+      "HeatingRate": 2352,
+      "RoomStatId": 2,
+      "Name": "Upstairs",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 191,
+      "CurrentSetPoint": 170,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "SetpointOrigin": "FromSchedule",
+      "DisplayedSetPoint": 170,
+      "ScheduledSetPoint": 170,
+      "AwayModeSuppressed": false,
+      "RoundedAlexaTemperature": 190,
+      "EffectiveMode": "Auto",
+      "PercentageDemandForItrv": 0,
+      "ControlDirection": "Heat",
+      "HeatingType": "HydronicRadiator"
+    }
+  ],
+  "Device": [
+    {
+      "id": 0,
+      "NodeId": 0,
+      "ProductType": "Controller",
+      "ProductIdentifier": "Controller",
+      "ActiveFirmwareVersion": "3.10.8",
+      "ModelIdentifier": "WT734R1S0902",
+      "DeviceLockEnabled": false,
+      "DisplayedSignalStrength": "Poor",
+      "ReceptionOfController": { "Rssi": -87 },
+      "ReceptionOfDevice": { "Rssi": 0, "Lqi": 255 },
+      "BindingsStatus": "Unchecked",
+      "ReportConfigStatus": "Unchecked"
+    },
+    {
+      "id": 1,
+      "NodeId": 55366,
+      "ProductType": "RoomStat",
+      "ProductIdentifier": "RoomStat",
+      "ActiveFirmwareVersion": "0000ea63",
+      "ModelIdentifier": "Thermostat",
+      "SerialNumber": "1C34F1FFFE039669",
+      "ProductModel": "Thermostat",
+      "OtaImageQueryCount": 1,
+      "LastOtaImageQueryCount": 1,
+      "ParentNodeId": 0,
+      "OtaVersion": 60003,
+      "OtaHardwareVersion": 256,
+      "DeviceLockEnabled": false,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "ReceptionOfController": { "Rssi": -70, "Lqi": 120 },
+      "ReceptionOfDevice": { "Rssi": -69, "Lqi": 124 },
+      "BindingsStatus": "SetCorrectly",
+      "ReportConfigStatus": "SetCorrectly"
+    },
+    {
+      "id": 2,
+      "NodeId": 29652,
+      "ProductType": "RoomStat",
+      "ProductIdentifier": "RoomStat",
+      "ActiveFirmwareVersion": "0000ea63",
+      "ModelIdentifier": "Thermostat",
+      "SerialNumber": "1C34F1FFFE03A7A2",
+      "ProductModel": "Thermostat",
+      "OtaImageQueryCount": 1,
+      "LastOtaImageQueryCount": 1,
+      "ParentNodeId": 0,
+      "OtaVersion": 60003,
+      "OtaHardwareVersion": 256,
+      "DeviceLockEnabled": false,
+      "DisplayedSignalStrength": "Medium",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "ReceptionOfController": { "Rssi": -79, "Lqi": 84 },
+      "ReceptionOfDevice": { "Rssi": -78, "Lqi": 88 },
+      "BindingsStatus": "SetCorrectly",
+      "ReportConfigStatus": "SetCorrectly"
+    }
+  ],
+  "Zigbee": {
+    "JPANCount": 7,
+    "NetworkChannel": 25,
+    "NoSignalReset": 6,
+    "UpdateEBLState": "Successful",
+    "CurrentEBLFile": "CICIE-1.2.0-3d1043a1.ebl",
+    "TargetEBLFile": "CICIE-1.2.0-3d1043a1.ebl",
+    "UpdateAttempts": 1,
+    "ZigbeeModuleVersion": "1.2.0-3d1043a1",
+    "ZigbeeEUI": "04CD15FFFE5824DA"
+  },
+  "UpgradeInfo": [
+    { "id": 1, "FirmwareFilename": "105E-0E00-01080000-0000-00FF.zigbee" },
+    { "id": 2, "FirmwareFilename": "105E-0201-0000EA64-0000-0000.zigbee" },
+    { "id": 3, "FirmwareFilename": "105E-04E1-0000A412-0000-0009.zigbee" },
+    { "id": 4, "FirmwareFilename": "105E-04E1-0000EA63-0100-01FF.zigbee" },
+    { "id": 5, "FirmwareFilename": "105E-05E1-00000018-0000-0200.zigbee" },
+    { "id": 6, "FirmwareFilename": "105E-0A00-00007D02-0000-0000.zigbee" },
+    { "id": 7, "FirmwareFilename": "105E-000B-020A01FF-0100-02FF.zigbee" },
+    { "id": 8, "FirmwareFilename": "105E-000D-020C01FF-0000-01FF.zigbee" },
+    { "id": 9, "FirmwareFilename": "105E-0010-020A00FF-0000-01FF.zigbee" },
+    { "id": 10, "FirmwareFilename": "105E-0011-020B0FFF-0000-02FF.zigbee" },
+    { "id": 11, "FirmwareFilename": "105E-0012-020A00FF-0000-01FF.zigbee" },
+    { "id": 12, "FirmwareFilename": "105E-0013-020B0FFF-0000-02FF.zigbee" },
+    { "id": 13, "FirmwareFilename": "120B-210B-00000022-0000-FFFF.zigbee" }
+  ],
+  "RoomStat": [
+    {
+      "id": 1,
+      "SetPoint": 200,
+      "MeasuredTemperature": 203,
+      "MeasuredHumidity": 49
+    },
+    {
+      "id": 2,
+      "SetPoint": 170,
+      "MeasuredTemperature": 191,
+      "MeasuredHumidity": 53
+    }
+  ],
+  "DeviceCapabilityMatrix": {
+    "Roomstat": true,
+    "ITRV": true,
+    "SmartPlug": true,
+    "UFH": true,
+    "UFHFloorTempSensor": true,
+    "UFHDewSensor": true,
+    "HACT": false,
+    "LACT": false,
+    "Light": false,
+    "Shutter": false,
+    "LoadController": true
+  }
+}

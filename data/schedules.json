@@ -1,0 +1,87 @@
+{
+  "Heating": [
+    {
+      "id": 1,
+      "Name": "Downstairs",
+      "Monday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Tuesday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Wednesday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Thursday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Friday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Saturday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "Sunday": {
+        "Time": [630, 900, 1530, 2130],
+        "DegreesC": [200, 185, 200, 170]
+      },
+      "CurrentSetpoint": 200,
+      "Next": { "Day": "Friday", "Time": 900, "DegreesC": 185 }
+    },
+    {
+      "id": 2,
+      "Name": "Upstairs",
+      "Monday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Tuesday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Wednesday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Thursday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Friday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Saturday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "Sunday": {
+        "Time": [630, 700, 1830, 1900],
+        "DegreesC": [190, 170, 200, 180]
+      },
+      "CurrentSetpoint": 170,
+      "Next": { "Day": "Friday", "Time": 1830, "DegreesC": 200 }
+    }
+  ],
+  "OnOff": [
+    {
+      "id": 1000,
+      "Name": "Hot Water",
+      "Monday": [630, -730, 1700, -1900],
+      "Tuesday": [630, -730, 1700, -1900],
+      "Wednesday": [630, -730, 1700, -1900],
+      "Thursday": [630, -730, 1700, -1900],
+      "Friday": [630, -730, 1700, -1900],
+      "Saturday": [630, -730, 1700, -1900],
+      "Sunday": [630, -730, 1700, -1900],
+      "CurrentState": "Off",
+      "Next": { "Day": "Friday", "Time": 1700, "State": "On" }
+    }
+  ]
+}

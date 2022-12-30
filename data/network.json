@@ -1,0 +1,117 @@
+{
+  "AccessPoint": {
+    "Enabled": false,
+    "Channel": 9,
+    "SecurityMode": "Open",
+    "MacAddress": "FCFEC2043564",
+    "NetworkInterface": {
+      "InterfaceName": "wlan1",
+      "HostName": "WiserHeat043564",
+      "DhcpMode": "Server",
+      "IPv4HostAddress": "192.168.8.1",
+      "IPv4SubnetMask": "255.255.255.0",
+      "IPv4DefaultGateway": "0.0.0.0",
+      "IPv4PrimaryDNS": "192.168.8.1",
+      "IPv4SecondaryDNS": "0.0.0.0"
+    }
+  },
+  "Station": {
+    "Enabled": true,
+    "SSID": "Magnet",
+    "SecurityMode": "WPA_WPA2_PSK",
+    "ScanSlotTime": 20,
+    "ScanSlots": 2,
+    "NetworkInterface": {
+      "InterfaceName": "wlan0",
+      "HostName": "WiserHeat043564",
+      "DhcpMode": "Client"
+    },
+    "ConnectionStatus": "Connected",
+    "DhcpStatus": {
+      "Status": "BOUND",
+      "LeaseStartTime": 1375226631,
+      "LeaseTime": 1800,
+      "IPv4Address": "10.10.1.72",
+      "IPv4SubnetMask": "255.255.240.0",
+      "IPv4DefaultGateway": "10.10.15.254",
+      "IPv4PrimaryDNS": "8.8.8.8",
+      "IPv4SecondaryDNS": "8.8.4.4"
+    },
+    "Scanning": false,
+    "DetectedAccessPoints": [
+      {
+        "SSID": "Magnet",
+        "Channel": 9,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -81
+      },
+      {
+        "SSID": "PLUSNET-NJC2J8",
+        "Channel": 1,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -87
+      },
+      {
+        "SSID": "TNCAP5B2B93_EXT2.4GHz",
+        "Channel": 6,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -90
+      },
+      {
+        "SSID": "Netgear",
+        "Channel": 6,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -92
+      },
+      {
+        "SSID": "Back garden TV.v,",
+        "Channel": 6,
+        "SecurityMode": "Open",
+        "RSSI": -92
+      },
+      {
+        "SSID": "DIRECT-0B-HP OfficeJet Pro 6970",
+        "Channel": 6,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -94
+      },
+      {
+        "SSID": "TNCAP5B2B93",
+        "Channel": 6,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -93
+      },
+      {
+        "SSID": "EE-aqgjm5_EXT",
+        "Channel": 11,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -90
+      },
+      {
+        "SSID": "Adonia",
+        "Channel": 3,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -93
+      },
+      {
+        "SSID": "Adonia-Guest",
+        "Channel": 3,
+        "SecurityMode": "WPA_WPA2_PSK",
+        "RSSI": -95
+      }
+    ],
+    "ConnectionFailures": 0,
+    "MdnsHostname": "WiserHeat043564",
+    "MacAddress": "FCFEC2043564",
+    "RSSI": { "Current": -86, "Min": -98, "Max": -65 },
+    "Channel": 255,
+    "UseGoogleDNS": true
+  },
+  "TcpStats_SinceBoot": {
+    "TimeLastUpdated": 1672389300,
+    "SegmentsSent_Count": 53094,
+    "SegmentRetransmissions_Count": 328,
+    "SocketTimeouts_Count": 0,
+    "StackRespawns_Count": 7
+  }
+}
