@@ -42,6 +42,7 @@ pub enum ControlType {
     FromSchedule,
     FromBoost,
     FromManualOverride,
+    FromComfortMode,
 }
 
 pub struct Hub {
