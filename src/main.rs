@@ -1,6 +1,10 @@
+mod influx;
+
 use clap::Parser;
 use flexi_logger::Logger;
-use wiser::Hub;
+use influx::Measurement;
+use time::OffsetDateTime;
+use wiser::{Hub, State};
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
@@ -24,5 +28,41 @@ async fn main() {
     let cli = Cli::parse();
 
     let hub = Hub::new(&cli.hub, &cli.secret);
-    hub.domain().await.unwrap();
+    let domain = hub.domain().await.unwrap();
+    let now = OffsetDateTime::now_utc();
+    // println!("{:#?}", domain);
+
+    for room in domain.rooms.iter() {
+        let mut measurement = Measurement::new("wiser_room", now);
+        measurement.add_field("temperature", room.calculated_temperature);
+        measurement.add_field("scheduled_temperature", room.scheduled_set_point);
+        measurement.add_field("set_point", room.current_set_point);
+        measurement.add_field(
+            "heating",
+            if room.control_output_state == State::On {
+                1.0
+            } else {
+                0.0
+            },
+        );
+
+        measurement.add_tag("room", &room.name);
+        measurement.add_tag("id", &room.id.to_string());
+        println!("{}", measurement);
+    }
+
+    for hw in domain.hot_water.iter() {
+        let mut measurement = Measurement::new("wiser_hot_water", now);
+        measurement.add_field(
+            "heating",
+            if hw.water_heating_state == State::On {
+                1.0
+            } else {
+                0.0
+            },
+        );
+
+        measurement.add_tag("id", &hw.id.to_string());
+        println!("{}", measurement);
+    }
 }
