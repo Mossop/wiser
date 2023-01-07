@@ -1,6 +1,10 @@
 [package]
 name = "wiser"
 version = "0.1.0"
+description = "Access to the a Drayton Wiser hub."
+authors = ["Dave Townsend <dtownsend@oxymoronical.com>"]
+repository = "https://github.com/Mossop/wiser/"
+license = "MIT"
 edition = "2021"
 
 [dependencies]
