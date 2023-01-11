@@ -87,7 +87,7 @@ pub struct Room {
     pub displayed_set_point: f64,
     #[serde(deserialize_with = "deserialize_temperature")]
     pub scheduled_set_point: f64,
-    pub away_mode_suppressed: bool,
+    pub away_mode_suppressed: Option<bool>,
     #[serde(deserialize_with = "deserialize_temperature")]
     pub rounded_alexa_temperature: f64,
     pub effective_mode: Mode,
