@@ -34,6 +34,11 @@ async fn main() {
 
     for room in domain.rooms.iter() {
         let mut measurement = Measurement::new("wiser_room", now);
+
+        if let Some(room_stat) = domain.room_stats.iter().find(|s| s.id == room.room_stat_id) {
+            measurement.add_field("humidity", room_stat.measured_humidity);
+        }
+
         measurement.add_field("temperature", room.calculated_temperature);
         measurement.add_field("scheduled_temperature", room.scheduled_set_point);
         measurement.add_field("set_point", room.current_set_point);
