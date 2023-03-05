@@ -108,7 +108,7 @@ pub struct Room {
 pub struct HotWater {
     #[serde(rename = "id")]
     pub id: usize,
-    pub override_type: OverrideType,
+    pub override_type: Option<OverrideType>,
     pub schedule_id: usize,
     pub mode: String,
     pub water_heating_state: State,
