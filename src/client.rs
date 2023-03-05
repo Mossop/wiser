@@ -41,7 +41,7 @@ impl Client {
             Ok(result) => Ok(result),
             Err(e) => {
                 log::error!("Failed to decode API response: {}", e);
-                eprintln!("{}", data);
+                eprintln!("{data}");
                 Err(e.into())
             }
         }

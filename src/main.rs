@@ -22,7 +22,7 @@ struct Cli {
 async fn main() {
     if let Err(e) = Logger::try_with_env_or_str("wiser=info,warn").and_then(|logger| logger.start())
     {
-        eprintln!("Warning, failed to start logging: {}", e);
+        eprintln!("Warning, failed to start logging: {e}");
     }
 
     let cli = Cli::parse();
@@ -53,7 +53,7 @@ async fn main() {
 
         measurement.add_tag("room", &room.name);
         measurement.add_tag("id", &room.id.to_string());
-        println!("{}", measurement);
+        println!("{measurement}");
     }
 
     for hw in domain.hot_water.iter() {
@@ -68,6 +68,6 @@ async fn main() {
         );
 
         measurement.add_tag("id", &hw.id.to_string());
-        println!("{}", measurement);
+        println!("{measurement}");
     }
 }
