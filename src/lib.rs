@@ -22,6 +22,12 @@ where
 }
 
 #[derive(Debug, Deserialize, PartialEq, Eq)]
+pub enum OverrideType {
+    Manual,
+    None,
+}
+
+#[derive(Debug, Deserialize, PartialEq, Eq)]
 pub enum State {
     On,
     Off,
@@ -66,6 +72,7 @@ pub struct RoomStat {
 pub struct Room {
     #[serde(rename = "id")]
     pub id: usize,
+    pub override_type: Option<OverrideType>,
     #[serde(default, deserialize_with = "deserialize_optional_temperature")]
     pub manual_set_point: Option<f64>,
     pub schedule_id: usize,
@@ -101,7 +108,7 @@ pub struct Room {
 pub struct HotWater {
     #[serde(rename = "id")]
     pub id: usize,
-    pub override_water_heating_state: State,
+    pub override_type: OverrideType,
     pub schedule_id: usize,
     pub mode: String,
     pub water_heating_state: State,
